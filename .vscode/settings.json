@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "editor.detectIndentation": false,
+    "oneDarkPro.italic": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 10000,
+}

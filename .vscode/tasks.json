@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "command": "gcc",
+    "args": [
+        "-Wall",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/out/${fileBasenameNoExtension}.exe"
+    ]
+}
+
