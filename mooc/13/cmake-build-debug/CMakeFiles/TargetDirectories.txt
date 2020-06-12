@@ -1,3 +1,0 @@
-D:/Project/C/mooc/13/cmake-build-debug/CMakeFiles/13_test_1.dir
-D:/Project/C/mooc/13/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Project/C/mooc/13/cmake-build-debug/CMakeFiles/rebuild_cache.dir

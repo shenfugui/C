@@ -1,6 +1,0 @@
-hello
-123
-world
-456
-you
-1233

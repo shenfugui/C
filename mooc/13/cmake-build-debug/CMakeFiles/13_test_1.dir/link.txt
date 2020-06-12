@@ -1,3 +1,0 @@
-"D:\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\13_test_1.dir/objects.a
-D:\MinGW\bin\ar.exe cr CMakeFiles\13_test_1.dir/objects.a @CMakeFiles\13_test_1.dir\objects1.rsp
-D:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\13_test_1.dir/objects.a -Wl,--no-whole-archive  -o ..\out\13_test_1.exe -Wl,--out-implib,..\out\lib13_test_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\13_test_1.dir\linklibs.rsp
