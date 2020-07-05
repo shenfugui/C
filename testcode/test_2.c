@@ -1,48 +1,37 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void fun(int s[],int t[])
+typedef struct _book {
+    int number;
+    char name[30];
+    struct _book *next;
+} book;
 
-{
+void AppendNode(book **head);
 
- int i,j,k,y=0;
-
- for(i=0;i<=9;i++)
-
- {
-
-  k=s[i]/2;
-
-
-  for(j= 2 ; j<=k; j++)
-
-    if(s[i]%j==0) break;
-
-
-
-  if(j>k)
-
-  {
-
-/************found************/
-
-     t[i]=s[i];
-
-  }
-
- }
-
- t[y]=0;
-
+int main() {
+    char choice;
+    book *head;
+    printf("Do you want to append a new node ?\n");
+    scanf("%c", &choice);  
+    while (choice == 'y' || choice == 'Y') {
+        AppendNode(&head);
+        printf("%d %s", head->number, head->name);
+        scanf("%c", &choice);
+    }
+    return 0; 
 }
 
-main()
-
-{   int  i,s[10]={21,17,9,59,77,67,49,99,35,83}, t[10];
-
-    fun(s, t);
-
-    for(i=0;t[i]!=0;i++)printf("%d  ", t[i]);
-
-    printf("\n");
-
+void AppendNode(book **head) {
+    book *info = NULL;
+    info = (book *)malloc(sizeof(book));
+    if (info != NULL) {
+        printf("Please input the infomation:\n");
+        scanf("%d %s", &info->number, info->name);
+        *head = info;
+        info->next = NULL;
+    } else {
+        printf("error!\n");
+        exit(1);
+    }
 }
