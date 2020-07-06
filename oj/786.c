@@ -1,9 +1,10 @@
 #include <stdio.h>
 
+int n, k;
+
 int quick_sort(int arr[], int l, int r, int k);
 
 int main() {
-    int n, k;
     scanf("%d %d", &n, &k);
     int arr[n];
     for (int i = 0; i < n; i++) scanf("%d", &arr[i]);
@@ -13,7 +14,7 @@ int main() {
 
 int quick_sort(int arr[], int l, int r, int k) {
     if (l >= r) return arr[l];
-    int i = l-1, j = r+1, pivot = arr[(l+r)/2];
+    int i = l-1, j = i+1, pivot = arr[(l+r)/2];
     while (i < j) {
         do i++; while (arr[i] < pivot);
         do j--; while (arr[j] > pivot);
